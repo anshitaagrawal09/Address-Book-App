@@ -56,8 +56,24 @@ public class AddressBookController {
         return ResponseEntity.noContent().build();
     }
 }
+//Create a new contact
+//curl -X POST http://localhost:8080/addressbook \
+//-H "Content-Type: application/json" \
+//-d '{"name":"John Doe","address":"123 Street, NY","phone":"1234567890"}'
 
+//Get all contacts
+//curl -X GET http://localhost:8080/addressbook
 
+//Get contact by ID
+//curl -X GET http://localhost:8080/addressbook/1
+
+//Update contact by ID
+//curl -X PUT http://localhost:8080/addressbook/1 \
+//-H "Content-Type: application/json" \
+//-d '{"name":"Jane Doe","address":"456 Avenue, CA","phone":"9876543210"}'
+
+//Delete contact by ID
+//curl -X DELETE http://localhost:8080/addressbook/1
 
 
 //UC1
